@@ -1,0 +1,76 @@
+
+:root {
+    --bg: #10141a;
+    --surface: #1b212b;
+    --primary: #08f793;      /* vert néon */
+    --secondary: #00c2ff;    /* bleu cyan */
+    --text-light: #e7e9ea;
+    --text-muted: #8a8d91;
+}
+
+/* --- Base --- */
+body {
+  font-family: Consolas, monospace;
+  background: #10141a;
+  color: #e7e9ea;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #1b212b;
+  box-shadow: 0 0 15px rgba(8, 247, 147, 0.12);
+  line-height: 1.6;
+}
+
+h1 {
+  color: #c9c933;
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #1cadda;
+  margin-top: 30px;
+  font-size: 1.4em;
+  border-bottom: 2px solid #8173d0;
+  padding-bottom: 5px;
+}
+
+
+.poste {
+  text-align: center;
+  margin: 10px 0;
+}
+.poste a {
+  color: #c42727;
+  text-decoration: none;
+}
+.poste a:hover {
+  text-decoration: underline;
+}
+
+/* Paragraphes & contenu */
+p {
+  margin: 10px 0;
+}
+
+strong {
+  color: #08f793;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+

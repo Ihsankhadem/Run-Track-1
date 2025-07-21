@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr-FR" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import CSS Critique -->
+    <link rel="stylesheet" href="style.css" >
+	<link rel="stylesheet" href="https://cdn.320css.com/1.1.1/320.css">
+	<!-- Import typographie Raleway -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+		* {
+		font-family: "Raleway", sans-serif;
+  		font-style: normal;
+		}
+		body {	
+		margin: 0;
+		height:100vh;
+		background: linear-gradient(rgb(19, 6, 51) 36%, rgb(5, 104, 190));
+		}
+		button
+		{
+		margin:3px;
+		border: 5px solid
+		border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+		}
+
+		button{
+		border: 5px solid transparent;
+		}
+
+		button:focus-visible
+		{
+		border: 5px solid transparent;
+		border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+		}
+		 /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem 1rem;
+            background-color: #000;
+            color: #fff;
+        }
+ header-text {
+        	justify-content: center;
+        	font-size:1.2rem;
+        	display: none ; /* Non visible par défaut */
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 80px; /* Largeur de l'élément */
+  			height: 80px; /* Hauteur de l'élément */
+  			background:url(https://lh3.googleusercontent.com/fife/ALs6j_H4B7gqbL9CzUk_kg7Ub17meroqKMrA7Y3ctt7iyxx6I1jbto5NAM7uWmqdNIXRJi_cM8zkA3j4Ol1p-4jLWqEkVKsS6U0w3EeW6K9umKZnYzQ-O_9tbJuUao-7p2X67PwFKYOCHNWJViXT7TclIAvQ1H6J8y_g3DF7ajZwHLbbTO1V7JeI6U5-4a0emtxk6m0KHbeoybl-sLKKkge0pZejesGv3sBceMCKoO0O4lPXohvzX7Gmjgy1eADKQZ4UyPU0ASxpwFQqUOpbJGF0VDwr6_4gZUqvPf9BU4dtgwEabrtlReJQD0VMRHirQMPenLwqhGjg5UWsTSmhMPrJzGwDhDgLGlOsziocYK0VH__qEFQlyLsFabV7q7uPitxZ2HQiai5cD20AjZ_FtqQSKQA42Y_gDN_JFPa4c_BgleMWtgdpgOaqRPVjcRvQWf4qR0cfQbI0q_kkeL4ajjkyOl7zouq5L05HrZVqAwteCVZRNjyvgHk7xn4DqrAu5kwGT9x8pcrQczDdWtdWxSjWPKd1MKDTNIfXArklIfn9XnWr77aF_RdwAnB2YhZbRoHUjGBzIAbYJYZOWHaCsDmOed6flliqljTE62TMbjLTB09AaO4V2h5ba06EAY1p2pcr-mZNpnUKAg_hWfre8WuTvjzmuodD7XmzmDfmyzhlB3hp3gpDse6AnmEV8WUsNGZFfuGENkhPgWumrbs7sAO1gYtqBp9Kr7ckqdjm-LpNcFH_F_I_-wh_SMQq_8zrfNPe17qKPHQ9mI7YmBtfYqK8GTgq-YdefAo9PSTamPF-OcrmL7CrqqvJuDQUwTaFee1St92ucsB90okUU0A5UDnoNtdboktwxNON3HJ0MR8Pg2E-GfTAZkGMV85QsU7yBfZeV_Tbz5nvCD82abonu_LnJIm49gpDrwJYHbMRpnE6TGd1ahhfzLKzkTHU3YrF4gH_pArc7FztBBmhhKlHBV09pFg6n-7n5mffUJtew8CJDXwg1JCsN67yi1zdJ3-np7Ln3pgQO9MdNundSVUE6dv30th95nI1VSdKFTrKUnzctj6fT-F0cVm-72V87GvrWGgc45Wy4BUE39-7bDReNnXFX7f_KZKLsc1ZB2sRCrKNx7pqZU-3lCL_YsvFS1xUe9qH38aw8wATSWblM_QYGaAKVam18YLSg48SpdXrxL_mrRnlPcFIoG0d-aXh_JgjtzLyQJCoveDM3SUxRi_gxqYMMh0VAZsAVPiT7lb_3neFnuo9Zc2bUhLBAzVKBdLZ34GHuahF6M6EnF6d1UQAuf7ZTe8n8PIVmBXdMwe13qV7NlwI_07epmUuXp3oeA-wwFQ4OU14aSXjTVvLPZxaJLlHg6VsBNpvzqS894sAxbrN5oBHqG7bLcxJVORp5APsdI0apU_KiJR5rK10_3qJtdZPBxB3s6yEfq4gDEiuC54dde_qQSfvhzFTBpK96QxYYukyE4N--muKNYJcmhBCiuETbL7nKNSP7SpjoDUzTS5cFM-GU7eHOJ1Bp75zcH-T34bgQeoj9ChKTR_IB9BFrGNr97zAZUamleECsXiAedcjJ-tnxTRQgoF7LRhm-eUrO51Lf1sNtU4Sjj9UcWUGJw=w1449-h730);;
+  			background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  			background-size: contain; /* Adapte l'image pour qu'elle tienne dans l'élément */
+  			background-position: center; /* Centre l'image dans l'élément */
+        }
+     .padding-80 {
+            padding-top: 10px;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: 0.5rem 0.5rem;
+            border: 2px solid transparent;
+            transition: border-image 0.3s ease;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex !important;
+            white-space: nowrap;
+        }
+
+        /* Hover and focus-visible effects */
+        nav a:hover,
+        nav a:focus-visible {
+            border-image: linear-gradient(45deg, #0568be, #00d4ff) 1;
+        }
+
+        nav a:focus-visible {
+            outline: none;
+        }
+
+        .container {
+    	display: flex; /* Active le modèle Flexbox */
+    	justify-content: space-between; /* Espacement uniforme entre les colonnes */
+    	align-items: center; /* Centre verticalement les éléments */
+    	flex-wrap: nowrap; /* Empêche le retour à la ligne */
+    	padding: 1rem;
+
+        border-radius:10px 10px 0px 0px;
+    	gap: 1rem; /* Ajoute un espacement entre les colonnes */
+    	margin: 0 auto;
+    	max-width: 1200px; /* Limite la largeur totale */
+    	background-color: rgba(5, 104, 190, 0.3); /* Optionnel, pour mieux visualiser */
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+		}
+
+		.content-box {
+    	flex: 1; /* Les boîtes partagent l'espace de manière égale */
+    	background-color: #0568be; 
+    	color: white;
+    	text-align: center;
+    	padding: 1rem;
+    	border-radius: 5px;
+		}
+        #rendez-vous {
+  		display: inline-block;
+  		align-items: center;
+  		justify-content: center;
+  		font-size: 1.2rem;
+  		color: white;
+  		background-color: #0568be;
+  		text-decoration: none;
+  		padding: 0.2rem 1rem;
+  		border-radius: 5px;
+  		transition:  background-color 1s ease-in-out; /* Transition fluide */
+  		transform: translateY(0); /* Position initiale */
+		}
+
+        /* Media queries */
+        @media only screen and (max-width: 760px)
+        {
+        	#rendez-vous {
+    			transform: translateY(0cm); /* Descend de 10 cm */
+    			background-color: #053abe; /* Couleur à déterminer !*/
+  			}
+        }
+        @media only screen and (min-width: 760px)   {
+        	.header-text {
+        		display: block ;
+        	}
+         
+        }
+    </style>
+</head>
+<body>
+<section id="navigation">
+<header>
+    <div class="logo"></div>
+    <div class="header-text">Agence marketing et digital</div>
+        <nav>
+        	<a href="#book">E-book</a>
+            <a href="#services">Services</a>
+            <a href="#contact" id="rendez-vous">Prendre contact</a>
+            
+        </nav>
+     
+
+</header>
+</section>
+<!-- SECTION E-BOOK -->
+<main class="padding-10">
+    <div class="container ">
+        <div class="content-box" >
+            <div class="hero-banner">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="Images/image.jpg"  alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/image2.jpg"  alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images/image3.jpg"  alt="">
+                    </div>
+                </div>
+                <div class="hero-overlay">
+                    <h1> Vous avez le produit. On crée le buzz. </h1>
+                    <p>Allons'y</p>
+                    <button></button>
+                </div>
+                
+            </div>   
+        </div>
+    </div>
+<section id="book" class="padding-10">
+<div class="container">
+    <div class="content-box"> 
+        <article>
+            <h3>Accueil</h3>
+                <p>Voir</p>
+        </article>
+    </div>
+    <div class="content-box"> 
+        <article>
+            <h3>Qui sommes nous ?</h3>
+                <p>Voir </p>
+        </article>
+    </div>
+    <div class="content-box"> 
+        <article>
+            <h3>Nos offres </h3>
+                <p>Voir</p>
+        </article>
+    </div>
+</div>
+</section>
+<!-- SECTION SERVICES -->
+<section id="services">
+<div class="container2">
+  <div class="content-box2"> 
+    <article>
+      <img src="Images/image2.jpg" alt="icone" class="icone-img">
+      <h3>Service 1</h3>
+      <p>Description du service 1.</p>
+    </article>
+  </div>
+  <div class="content-box"> 
+    <article>
+      <img src="Images/image2.jpg" alt="icone" class="icone-img">
+      <h3>Service 2</h3>
+      <p>Description du service 1.</p>
+    </article>
+  </div>
+  <div class="content-box"> 
+    <article>
+      <img src="Images/image2.jpg" alt="icone" class="icone-img">
+      <h3>Service 3</h3>
+      <p>Description du service 1.</p>
+    </article>
+  </div>
+  <div class="content-box"> 
+    <article>
+      <img src="Images/image2.jpg" alt="icone" class="icone-img">
+      <h3>Service 4</h3>
+      <p>Description du service 1.</p>
+    </article>
+  </div>
+  <div class="content-box"> 
+    <article>
+      <img src="Images/image2.jpg" alt="icone" class="icone-img">
+      <h3>Service 5</h3>
+      <p>Description du service 1.</p>
+    </article>
+  </div>
+</div>
+
+
+ <!-- FORMULAIRE EN BAS DE PAGE -->
+
+ <body class="form-page">
+
+<h1 class="titre_formulaire">Contact-Nous</h1>
+
+<form action = "#" methods = "post">
+
+<fieldset>
+
+<legend> Identité</legend>
+<label for="prefix">Préfix</label>
+<select id = "prefix" name = "prefix" required>
+    <option value="">--Choisir--</option>
+    <option value="M.">M.</option>
+    <option value="Mme."">Mme.</option>"
+</select>
+ 
+<br></br>
+
+<label for="prenom">Prenom</label>
+<input type="text" id="prenom" name="prenom"required>
+
+<br></br>
+
+<label for="nom">Nom</label>
+<input type="text" id="nom" name="nom"required>
+
+<br></br>
+
+<label for="email">Email</label>
+<input type="text" id="email" name="email">
+
+<br></br>
+
+<label for="tel">Téléphone</label>
+<input type="text" id="tel" name="tel">
+
+<br></br>
+
+<label for="sms">Message</label>
+<input type="text" id="sms" name="sms">
+
+      <div class="case">
+        <input type="checkbox" id="case" name="case">
+        <label for="case">J'accepte de recevoir des informations de l'Agence</label>
+      </div>
+
+<button type="envoie">Envoyer</button>
+
+</fieldset>
+
+
+
+
+</section>
+</main>
+<footer>
+<!-- SECTION CONTACT -->
+<section id="contact">
+</section>
+</footer>
+<!-- Importation script js -->
+</body>
+</body>
+</html>

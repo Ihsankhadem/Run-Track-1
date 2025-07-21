@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;               /* supprime la marge par défaut */
+    padding: 0;
+    line-height: 1.6;
+    min-height: 100vh;       /* occupe toute la hauteur */
+    width: 100vw;            /* occupe toute la largeur */
+    box-sizing: border-box;
+}
+
+
+h1, h2 {
+    color: #05542eb8;
+}
+
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h2 {
+    background-color: #b2dfdb;  
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+a {
+    text-decoration: none;   /* pas de soulignement */
+    color: #004d40;         
+    font-weight: bold;
+}
+
+
+.poste {
+    text-align: center;
+}
+
+
+.rose {
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    display: block;
+    margin: 0 auto 20px auto; /* centre l'image et espace en bas */
+}
+
+
+.bande {
+    background-color: #e0f7f9;
+    width: 300px;
+    padding: 17px;
+}
+
+.bande h2 {
+    text-align: left;
+    margin-top: 0;
+    border-bottom: 2px solid #05542eb8; /* trait sous le h2 */
+    padding-bottom: 5px;
+    background-color: transparent; /* enlève le fond bleu des h2 dans la bande */
+    border-radius: 0;
+}
+
+/* (bande + contenu) */
+.contient {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+main {
+    flex: 1;                
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+
+
